@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You Fija</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./image/icon.png" type="image/x-icon">
+    <style>
+    body {
+        font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Mengisi seluruh tinggi layar */
+    margin: 0;
+    background-color: #fce4ec;
+}
+p{
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 16px;
+}
+        h1 { 
+            color: #e91e63; 
+        }
+        #hiddenMessage,
+.gallery,
+.video-container,
+.form-container {
+    display: none; /* Tetap disembunyikan di awal */
+    width: 100%; /* Mengisi lebar penuh */
+    text-align: center; /* Memusatkan teks */
+}
+        .stiker {
+            width: 150px;  /* Atur ukuran gambar */
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+        .button {
+            background-color: #e91e63;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+            margin-bottom: 40px;
+        }
+        .button:hover { 
+            background-color: #c2185b; 
+        }
+        .judul{
+            text-align: center;
+        }
+        .gallery, .video-container, .form-container {
+            display: none; /* Disembunyikan awalnya */
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border-radius: 10px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .video-container video {
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .subjudul{
+            margin-top: 100px;
+            font-size: 25px;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            text-align: left;
+            width: 80%;
+            max-width: 400px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #e91e63;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #c2185b;
+        }
+    </style>
+</head>
+<body>
+    <audio id="backgroundMusic" autoplay loop>
+        <source src="song/Keep On Loving You - Cigarettes After Sex.mp3" type="audio/mp3"> 
+        Browser kamu tidak mendukung pemutar audio.
+    </audio>
+    <h1>Hallo, Fijanatin Akhmalia🤍🤍🤍
+        </h1>
+    <h2 style="color: #c2185b;">Liat Pesannya Dong</h2>
+    
+    <div id="hiddenMessage">
+        <p>Haii, eumm mungkin ini waktunya hehe, sebenarnya dulu aku juga ada rasa pas todays kaya kamu lucu, cakep, imut pipinya, baikk, kamu orang nya happy, bergairah bangett 🩵🩵.
+            Aku juga sangat apresisasi kamu udah nyoba SNBT, jalur mandiri, meskipun engga keterima,tapi kamu udah nyoba berulang kali. Mau ada minat lagi untuk lanjutin kuliah.
+            Jangan putus asa yaa SEMANGATT!!.Kamu juga hebat lintas jurusan mungkin dari IPS ke Teknik Industri, aku juga seneng dengerin kamu cerita hehe excited banget LUCUUU, dan sekarang aku juga nyaman sama kamu pas ketemu gimana kalo hubungan kita seriusin?? hihi,BTW makasih juga udah naksir aku hehe kiw kiw. Emang kamu naksir aku kenapa?? pengen tau dehh
+        </p>
+        <h1 class="subjudul">JANGAN LUPAA SCROLL BAWAH YAWWW</h1>
+        <img id="first_stiker" class="stiker" src="https://feeldreams.github.io/bunga.gif" alt="Stiker Bunga"/>
+   
+
+    <!-- Galeri Foto -->
+    <div class="gallery" id="gallery">
+        <img src="image/img.jpeg" alt="Momen 1">
+        <img src="image/img2.jpeg" alt="Momen 2">
+        <img src="image/img3.jpeg" alt="Momen 3">
+    </div>
+
+    <!-- Tempat Video -->
+    <div class="video-container" id="videoContainer">
+        <video controls>
+            <source src="image/shortvideo.mp4" type="video/mp4">
+            Browser kamu tidak mendukung video.
+        </video>
+    </div>
+
+    <h2 class="judul">Do you want to be my girlfriend?</h2>
+
+</div>
+
+    <!-- Formulir Balasan -->
+    <div class="form-container" id="formContainer">
+        <form action="https://formspree.io/f/xbljzbjq" method="POST"> 
+            <label for="message">Do you want to accept it??</label>
+            <textarea name="message" id="message" rows="5" placeholder="Tulis balasan di sini..." required></textarea>
+            <label for="message">Kamu suka aku?? Karena apa? Pengen tau ih</label>
+            <textarea name="message" id="message" rows="5" placeholder="Tulis balasan di sini..." required></textarea>
+            <button type="submit">Kirim Balasan</button>
+        </form>
+    </div>
+
+    <div class="button" onclick="showContent()">Lihat Pesan</div>
+
+    <script>
+        document.getElementById('backgroundMusic').volume = 0.5;
+        function showContent() {
+            document.getElementById("hiddenMessage").style.display = "block";
+            document.getElementById("gallery").style.display = "flex";
+            document.getElementById("videoContainer").style.display = "block";
+            document.getElementById("formContainer").style.display = "block";
+        }
+    </script>
+</body>
+</html>
